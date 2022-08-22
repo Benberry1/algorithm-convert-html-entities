@@ -1,6 +1,6 @@
 const convertHTML = (str) => {
   const htmlEntity = ["&", "<", ">", '"', "'"];
-  const codeMap = {
+  const entityMap = {
     "&": "&amp;",
     "<": "&lt;",
     ">": "&gt;",
@@ -12,7 +12,7 @@ const convertHTML = (str) => {
     .split("")
     .map((char) => {
       if (htmlEntity.includes(char)) {
-        return codeMap[char];
+        return entityMap[char];
       } else {
         return char;
       }
