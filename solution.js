@@ -8,15 +8,16 @@ const convertHTML = (str) => {
     "'": "&apos;",
   };
 
-  const newStr = str.split("").map((char) => {
-    if (htmlEntity.includes(char)) {
-      return codeMap[char];
-    } else {
-      return char;
-    }
-  });
-
-  return newStr.join("");
+  return str
+    .split("")
+    .map((char) => {
+      if (htmlEntity.includes(char)) {
+        return codeMap[char];
+      } else {
+        return char;
+      }
+    })
+    .join("");
 };
 
 module.exports = { convertHTML };
