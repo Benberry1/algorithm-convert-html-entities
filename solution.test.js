@@ -23,7 +23,7 @@ describe("Convert HTML entity function", () => {
     'WHEN a string of "%s" is passed to convertHTML THEN "%s" is returned',
     (str, expected) => {
       const result = convertHTML(str);
-      expected(result).toBe(expected);
+      expect(result).toBe(expected);
     }
   );
 });
