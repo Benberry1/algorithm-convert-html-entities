@@ -1,0 +1,14 @@
+{
+  "name": "algorithm-convert-html-entities",
+  "version": "1.0.0",
+  "description": "Solution and testing for the algortihm converting html entities",
+  "main": "solution.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "Ben Berry",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
