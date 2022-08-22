@@ -4,10 +4,12 @@
 // with the html entity. E.g., replace & with &amp;
 
 const { convertHTML } = require("./solution");
+const { convertHTMLTwo } = require("./solution-2");
 
 describe("Convert HTML entity function", () => {
   test("WHEN a string is passed to convertHTML THEN a string is returned", () => {
     const result = convertHTML("This is a string!");
+    // const result = convertHTMLTwo("This is a string!");
     expect(typeof result === "string").toBe(true);
   });
 
@@ -23,6 +25,7 @@ describe("Convert HTML entity function", () => {
     'WHEN a string of "%s" is passed to convertHTML THEN "%s" is returned',
     (str, expected) => {
       const result = convertHTML(str);
+      //   const result = convertHTMLTwo(str);
       expect(result).toBe(expected);
     }
   );
