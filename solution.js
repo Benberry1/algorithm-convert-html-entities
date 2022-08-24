@@ -9,13 +9,14 @@ const convertHTML = (str) => {
 
   return str
     .split("")
-    .map((char) => {
-      if (char in entityMap) {
-        return entityMap[char];
-      } else {
-        return char;
-      }
-    })
+    .map(
+      (char) => (char in entityMap ? entityMap[char] : char)
+      //   if (char in entityMap) {
+      //     return entityMap[char];
+      //   } else {
+      //     return char;
+      //   }
+    )
     .join("");
 };
 
