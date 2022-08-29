@@ -11,11 +11,11 @@ I have also created test cases using jest, as following TDD helps process the lo
 
 ## What I learned
 
-The main thing that I was able to implement that I learned more about was using objects as dictionaries to reference the corresponding HTML entity code. Utilizing the object dictionary in two different solutions and once again learning more about RegExp and how powerful they can be!
+The main thing that I was able to implement that I learned more about, was using objects as dictionaries to reference the corresponding HTML entity code. Utilizing the object dictionary in two different solutions and once again learning more about RegExp and how powerful it can be!
 
 ## Documentation
 
-Below is a list of methods I used with links to the relevant MDN page. Some of these were known prior and some were learned through documentation searching during the challenge.
+Below is a list of methods I used with links to the relevant MDN page.
 
 - [String.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 - [Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
